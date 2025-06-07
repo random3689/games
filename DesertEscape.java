@@ -74,6 +74,28 @@ public class DesertEscape
         			System.out.println("You have "+ food +" pounds of food.");
         		}
         	}
+        	else if(choice==2){
+        		if(money<20*amount){
+        			System.out.println("Not enough money");
+        		}
+        		else{
+        			money-=20*amount;
+        			bullets+=20*amount;
+        			System.out.println("You have "+ money +" bucks.");
+        			System.out.println("You have "+ bullets +" bullets.");
+        		}
+        	}
+        	else if(choice==3){
+        		if(money<10*amount){
+        			System.out.println("Not enough money");
+        		}
+        		else{
+        			money-=10*amount;
+        			gas+=50*amount;
+        			System.out.println("You have "+ money +" bucks.");
+        			System.out.println("You have "+ gas +" miles of gas.");
+        		}
+        	}
         }
         speak("Buffalo Bill", "See You later");
 	}
